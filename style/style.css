@@ -8,7 +8,6 @@
 }
 body {
     background-color: #f5f8ff;
-
 }
 
 :root {
@@ -316,7 +315,7 @@ nav {
 .feedback h2 {
     text-align: center;
     font-size: 2.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 
 .user-feed {
@@ -403,4 +402,85 @@ nav {
     .feedback h2 {
         font-size: 2rem;
     }
+}
+/* get started section */
+.get-started {
+  max-width: 1200px;
+  background-color: #ffffff;
+  margin: 3rem auto;
+  padding: 4rem;
+  text-align: center;
+  border-radius: 5px;
+}
+.get-started h1 {
+  font-size: 3.5rem;
+  padding: 2rem 0 1rem 0;
+  font-weight: 700;
+  color: #000;
+}
+
+.get-started p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: var(--second-color);
+}
+.get-started .btn-primary {
+  background: var(--primary-color);
+  color: #FFFFFF;
+  border-radius: 6px;
+  padding: 14px 32px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+  margin-bottom: 2rem;
+}
+
+.get-started .btn-primary:hover {
+  background-color: #332df5;
+  transform: translateY(-2px);
+}
+
+.get-started .btn-primary:active {
+  transform: translateY(0);
+  background-color: #332df5;
+  opacity: 0.9;
+}
+.get-img-st img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px; 
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .get-started h1 {
+    font-size: 2.5rem;
+    padding: 2rem 0 1rem 0;
+  }
+
+  .get-started p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .get-started .btn-primary {
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .get-started h1 {
+    font-size: 2rem;
+  }
+
+  .get-started p {
+    font-size: 0.95rem;
+  }
 }
