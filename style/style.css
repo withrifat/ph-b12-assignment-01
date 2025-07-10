@@ -9,6 +9,7 @@
 
 :root {
     --primary-color: #4E47FF;
+    --second-color: #252432;
 }
 .btn-primary {
     background: var(--primary-color);
@@ -44,7 +45,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   width: 80%;
-  max-width: 1400px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 2rem;
 }
@@ -55,7 +56,7 @@ nav {
 }
 /* hero section */
 .hero {
-    max-width: 1400px;
+    max-width: 1300px;
     margin: 0 auto;
     float: 1;
     display: flex;
@@ -145,4 +146,26 @@ nav {
   nav img {
     max-width: 120px;
   }
+}
+
+/* live preview section  */
+.live-preview{
+    margin: 3rem auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    align-items: center;
+
+}
+.launch-live h2{
+    font-size: 3rem;
+    color: black;
+    padding: 2rem 0rem;
+}
+.launch-live p {
+    color: var(--second-color);
+    padding-bottom: 1rem;
+}
+.live-image img {
+    border-radius: 2rem;
 }
