@@ -16,6 +16,14 @@ body {
     --second-color: #8d8e98;
 }
 
+img {
+    transition: all 0.3s ease;
+}
+
+img:hover {
+    transform: translateY(-2px);
+}
+
 .btn-primary {
     background: var(--primary-color);
     color: #FFFFFF;
@@ -503,6 +511,7 @@ section.input {
     align-items: center;
     justify-content: space-between;
 }
+
 .text-area h1 {
     font-size: 5rem;
     color: black;
@@ -568,6 +577,7 @@ form textarea {
         font-size: 0.9rem;
     }
 }
+
 /* start footer part */
 footer {
     background: #ffffff;
