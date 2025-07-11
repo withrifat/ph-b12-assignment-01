@@ -13,7 +13,7 @@ body {
 
 :root {
     --primary-color: #4E47FF;
-    --second-color: #252432;
+    --second-color: #8d8e98;
 }
 
 .btn-primary {
@@ -27,16 +27,17 @@ body {
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
     text-decoration: none;
+    transition: all 0.3s ease;
 }
 
 .btn-primary:hover {
-    background-color: #332df5;
-    transform: translateY(-2px);
+    background-color: #6a63ff;
+    transform: translateY(-4px);
 }
 
 .btn-primary:active {
     transform: translateY(0);
-    background-color: #332df5;
+    background-color: #6a63ff;
     opacity: 0.9;
 }
 
@@ -164,7 +165,7 @@ nav {
 
 /* live preview section  */
 .live-preview {
-    margin: 3rem auto;
+    margin: 5rem auto;
     display: flex;
     justify-content: space-between;
     max-width: 1200px;
@@ -521,6 +522,7 @@ form {
 
 form label {
     font-size: 1rem;
+    color: #000000;
     margin-bottom: 0.3rem;
 }
 
@@ -563,6 +565,80 @@ form textarea {
 
     form input,
     form textarea {
+        font-size: 0.9rem;
+    }
+}
+/* start footer part */
+footer {
+    background: #ffffff;
+    margin: 0 auto;
+    padding: 4rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+footer h1 {
+    color: var(--primary-color);
+    font-size: 4.5rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+footer p {
+    max-width: 700px;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--second-color);
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: var(--second-color);
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+    padding: 1rem;
+}
+
+footer ul li a:hover {
+    color: #332df5;
+    text-decoration: underline 1px solid #130ceb;
+    transform: translateY(-3px) scale(1.05);
+}
+
+@media (max-width: 768px) {
+    footer ul {
+        justify-content: center;
+    }
+
+    footer p {
+        font-size: 0.95rem;
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    footer img {
+        max-width: 120px;
+    }
+
+    footer ul {
+        gap: 1rem;
+    }
+
+    footer ul li a {
         font-size: 0.9rem;
     }
 }
